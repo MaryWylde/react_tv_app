@@ -1,0 +1,16 @@
+html {
+  font-size: 62.5%;
+}
+* {
+  font-size: 1.4rem;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: "Tajawal";
+}
+
+body > div {
+  font-size: 1.4rem;
+}

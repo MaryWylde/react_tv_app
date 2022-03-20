@@ -1,0 +1,153 @@
+$font-color: #f1f1f1;
+
+.backgroundOpacity {
+  position: relative;
+
+  .sideBar {
+    position: absolute;
+    height: 100%;
+    z-index: 9;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 3.5rem;
+    width: 15rem;
+
+    .userInfo {
+      display: none;
+    }
+
+    .sidebarInfo {
+      display: flex;
+      flex-direction: row;
+
+      .listItems {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .iconHolder {
+          margin-top: 3rem;
+          width: 5rem;
+          height: 5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          align-items: baseline;
+
+          &:hover {
+            background-color: #3b486d;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .icon {
+            width: 2.6rem;
+            height: 3rem;
+            cursor: pointer;
+          }
+        }
+        .title {
+          display: none;
+        }
+
+        .active {
+          display: block;
+          color: $font-color;
+          padding-left: 23px;
+          font-size: 36px;
+          font-weight: bold;
+        }
+      }
+    }
+    .bottomInfo {
+      display: none;
+    }
+  }
+}
+
+.backgroundOpacityVisible {
+
+  .activeSideBar {
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    width: 1900px;
+    height: 100%;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .userInfo {
+      display: flex;
+     align-items: center;
+      .userName {
+        color: $font-color;
+        font-size: 36px;
+        padding-left: 15px;
+        font-weight: bold;
+        
+      }
+    }
+
+    .sidebarInfo {
+      display: flex;
+      flex-direction: row;
+      &:hover {
+        background-color: #3b486d;
+        border-radius: 15px;
+        cursor: pointer;
+      }
+      .listItems {
+        display: flex;
+        flex-direction: row;
+
+        .iconHolder {
+          margin-top: 30px;
+          width: 50px;
+          height: 50px;
+
+          &:hover {
+            background-color: #3b486d;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .icon {
+            width: 26px;
+            height: 30px;
+            cursor: pointer;
+          }
+        }
+
+        .title {
+          display: none;
+        }
+
+        .active {
+          display: block;
+          color: $font-color;
+          padding-left: 23px;
+          font-size: 36px;
+        }
+
+      }
+    }
+    .bottomInfo {
+      display: block;
+      color: #858688;
+      
+      display: flex;
+      flex-direction: column;
+
+      > a {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.playBtn {
+  width: 12.221vw;
+  height: 3.736vw;
+  border-radius: 2.02vw;
+  color: #000000;
+  font-size: 1.616vw;
+  border-color: #f1f1f1;
+  cursor: pointer;
+  background: #f1f1f1;
+  font-weight: bold;
+
+  @media (max-width: 1300px) {
+    border-radius: 40px;
+    width: 180px;
+    height: 60px;
+  }
+  @media (max-width: 960px) {
+    width: 130px;
+    height: 50px;
+    font-size: 15px;
+  }
+}

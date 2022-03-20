@@ -1,0 +1,76 @@
+.category {
+  position: relative;
+
+  .mainImage {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+  }
+
+  .infroWrapper {
+    margin-left: 120px;
+    margin-top: 7rem;
+    position: relative;
+    @media (max-width: 960px) {
+      margin-left: 80px;
+    }
+    .mainInfo {
+      .category {
+        color: #858688;
+        font-size: 30px;
+      }
+
+      .title {
+        @media (max-width: 960px) {
+          width: 150px;
+          height: 50px;
+        }
+      }
+    }
+
+    .numberedInfo {
+      .released,
+      .rating,
+      .duration {
+        position: relative;
+        color: #f1f1f1;
+        font-size: 30px;
+        z-index: 1;
+
+        @media (max-width: 960px) {
+          font-size: 15px;
+        }
+      }
+    }
+
+    .released,
+    .rating {
+      padding-right: 1.375rem;
+    }
+
+    .descriptionWrapper {
+      width: 50%;
+      @media (max-width: 960px) {
+        width: 80%;
+      }
+
+      position: relative;
+
+      .description {
+        font-size: 1.616vw;
+        color: #f1f1f1;
+
+        @media (max-width: 960px) {
+          font-size: 15px;
+        }
+      }
+    }
+
+    .btnWrapper {
+      display: flex;
+      .moreInfo {
+        padding-right: 17px;
+      }
+    }
+  }
+}

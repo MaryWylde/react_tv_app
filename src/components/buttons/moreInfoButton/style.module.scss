@@ -1,0 +1,22 @@
+.moreInfoBtn {
+  width: 12.221vw;
+  height: 3.736vw;
+  border-radius: 2.02vw;
+  color: #f1f1f1;
+  font-size: 1.616vw;
+  border-color: #2727f5;
+  cursor: pointer;
+  font-weight: bold;
+  background: linear-gradient(159.1deg, #2727f5 -26.12%, #001671 140.46%);
+
+  @media (max-width: 1300px) {
+    border-radius: 40px;
+    width: 180px;
+    height: 60px;
+  }
+  @media (max-width: 960px) {
+    width: 130px;
+    height: 50px;
+    font-size: 15px;
+  }
+}

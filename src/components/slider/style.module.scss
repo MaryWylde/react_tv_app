@@ -1,0 +1,43 @@
+.rowItems {
+  position: absolute;
+  bottom: 0;
+  left: 7%;
+  display: flex;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+
+  .trendingMovies {
+    .coverImage {
+      overflow-x: hidden;
+      min-width: 200px;
+      height: 290px;
+      padding-left: 15px;
+      transition: transform 450ms;
+      padding-top: 70px;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.08);
+      }
+      @media (max-width: 960px) {
+        width: 150px;
+        height: 250px;
+      }
+    }
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.trending {
+  position: absolute;
+  color: #f1f1f1;
+  left: 10px;
+  font-size: 32px;
+
+  @media (max-width: 960px) {
+    font-size: 15px;
+  }
+}
